@@ -1,0 +1,53 @@
+:root {
+  /* Default (light mode) colors */
+  --brand-primary: #0768ac;
+  --brand-secondary: #03c180;
+  --bg_default: #ffffff;
+  --bg_body: #f0f9ff;
+  --lines-color: #dddddd;
+  --body-text: #333333;
+  --heart-color: #dc143c;
+  --white-color:white;
+  --bg_details:#333333;
+  --black-color:black;
+  --star-color:#ff9f43;
+  --favourite-border:#dddddd;
+}
+
+.mode-btn,
+.favourites-btn {
+  border: 1px solid var(--lines-color);
+  border-radius: 4.8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4.8px;
+  color: var(--body-text);
+}
+
+#heart-icon-btn,
+#mode-icon-btn {
+  width: 13px;
+  height: 13px;
+}
+#heart-icon-btn {
+  color: var(--body-text);
+}
+
+#heart-icon-btn.clicked {
+  color: #dc143c;
+}
+
+#mode-icon-btn {
+  color: var(--body-text);
+}
+
+#mode-icon-btn.clicked {
+  color: #c2d055;
+}
+.btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 0.83rem;
+}
