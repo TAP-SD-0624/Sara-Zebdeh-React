@@ -42,14 +42,7 @@ body {
   align-items: center;
 }
 
-.btn {
-  border: none;
-  background: none;
-  cursor: pointer;
-  font-size: 0.83rem;
-}
-
-.gab {
+.gap {
   gap: 0.5rem;
 }
 
