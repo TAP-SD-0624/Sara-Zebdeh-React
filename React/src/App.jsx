@@ -1,18 +1,9 @@
-import HeaderComponent from "./components/header/HeaderComponent";
-import MainComponent from "./components/main/MainComponent";
-import FooterComponent from "./components/footer/FooterComponent";
-import "./App.css";
+import HomeLayoutComponent from "./components/HomeLayout/HomeLayoutComponent";
 
 function App() {
   return (
     <>
-      <body className="container">
-        <div className="header-body-section">
-          <HeaderComponent />
-          <MainComponent />
-        </div>
-        <FooterComponent />
-      </body>
+      <HomeLayoutComponent />
     </>
   );
 }

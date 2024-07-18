@@ -1,0 +1,19 @@
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .search-box {
+    padding: 8px;
+  }
+  
+  .search {
+    border: none;
+    background: none;
+    outline: none;
+  }
+
+  .gap{
+    gap: 8px;
+  }
