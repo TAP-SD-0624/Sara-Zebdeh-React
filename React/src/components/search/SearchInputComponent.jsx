@@ -1,10 +1,11 @@
 import React from "react";
+import { GoSearch } from "react-icons/go";
 import "./search.css";
 
 function SearchInputComponent() {
   return (
     <div className="flex gap search-box">
-      <ion-icon name="search-outline"></ion-icon>
+      <GoSearch />
       <input
         className="search"
         name="search"

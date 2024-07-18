@@ -6,11 +6,13 @@ import "./cards.css";
 const CardsComponent = (props) => (
   <div className="topics-container">
     {props.topics.map((topic) => (
+      // eslint-disable-next-line react/jsx-key
       <CardComponrnt
         name={topic.name}
         topic={topic.topic}
         category={topic.category}
         image={topic.image}
+        rating={topic.rating}
       />
     ))}
   </div>
@@ -23,6 +25,7 @@ CardsComponent.propTypes = {
       topic: PropTypes.string.isRequired,
       category: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
+      rating: PropTypes.number.isRequired,
     })
   ),
 };
