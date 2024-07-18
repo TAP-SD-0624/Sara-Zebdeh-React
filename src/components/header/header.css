@@ -1,0 +1,19 @@
+.nav {
+  padding: 16px 48px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gab {
+  gap: 0.5rem;
+}
