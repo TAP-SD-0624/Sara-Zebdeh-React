@@ -1,9 +1,11 @@
 import HomeLayoutComponent from "./components/HomeLayout/HomeLayoutComponent";
+import DetailsLayoutComponent from "./components/DetailsPageLayout/DetailsLayoutComponent";
 
-function App() {
+const App = () => {
   return (
     <>
-      <HomeLayoutComponent />
+      {/* <HomeLayoutComponent /> */}
+      <DetailsLayoutComponent />
     </>
   );
 }

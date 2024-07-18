@@ -1,16 +1,16 @@
 import React from "react";
 import HeaderComponent from "../header/HeaderComponent";
-import HomeContentComponent from "../HomeContent/HomeContentComponent";
+import DetailsContentComponent from "../DetailsContent/DetailsContentComponent";
 import FooterComponent from "../footer/FooterComponent";
-import "./HomeLayout.css";
+import "./DetailsLayout.css";
 
-function HomeLayoutComponent() {
+function DetailsLayoutComponent() {
   return (
     <>
       <body className="container">
         <div className="header-body-section">
           <HeaderComponent />
-          <HomeContentComponent />
+          <DetailsContentComponent />
         </div>
         <FooterComponent />
       </body>
@@ -18,4 +18,4 @@ function HomeLayoutComponent() {
   );
 }
 
-export default HomeLayoutComponent;
+export default DetailsLayoutComponent;
