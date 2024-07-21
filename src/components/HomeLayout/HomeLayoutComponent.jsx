@@ -1,7 +1,7 @@
 import React from "react";
-import HeaderComponent from "../header/HeaderComponent";
+import Header from "../header/Header";
 import HomeContentComponent from "../HomeContent/HomeContentComponent";
-import FooterComponent from "../footer/FooterComponent";
+import Footer from "../Footer/Footer";
 import "./HomeLayout.css";
 
 function HomeLayoutComponent() {
@@ -9,10 +9,10 @@ function HomeLayoutComponent() {
     <>
       <body className="container">
         <div className="header-body-section">
-          <HeaderComponent />
+          <Header />
           <HomeContentComponent />
         </div>
-        <FooterComponent />
+        <Footer />
       </body>
     </>
   );

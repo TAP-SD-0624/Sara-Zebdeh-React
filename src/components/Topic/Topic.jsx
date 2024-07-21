@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import StarsRatingComponent from "../stars/StarsRatingComponent";
-import "./card.css";
+import Stars from "../Stars/Stars";
+import "./topic.css";
 
-function CardComponrnt(props) {
+const Topic = (props) => {
   return (
     <div className="topic">
       <div className="topic-img">
@@ -12,19 +12,19 @@ function CardComponrnt(props) {
       <div className="information-for-topic">
         <p className="topicCategory">{props.category}</p>
         <h3>{props.topic}</h3>
-        <StarsRatingComponent rating={props.rating} />
+        <Stars rating={props.rating} />
         <p className="auther-p">Author: {props.name}</p>
       </div>
     </div>
   );
-}
+};
 
-CardComponrnt.propTypes = {
+Topic.propTypes = {
   image: PropTypes.string.isRequired,
   topic: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  rating: PropTypes.number.isRequired
+  rating: PropTypes.number.isRequired,
 };
 
-export default CardComponrnt;
+export default Topic;

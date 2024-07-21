@@ -1,7 +1,7 @@
 import React from "react";
 import "./logo.css";
 
-const LogoComponent = () => {
+const Logo = () => {
   return (
     <h3 className="nav-h3">
       Web Topics
@@ -9,4 +9,4 @@ const LogoComponent = () => {
   );
 };
 
-export default LogoComponent;
+export default Logo;

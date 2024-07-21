@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./select.css";
 
-const SelectComponent = (props) => {
+const Select = (props) => {
   return (
     <div className="select">
       <div className="select-label-container">
@@ -21,7 +21,7 @@ const SelectComponent = (props) => {
   );
 };
 
-SelectComponent.propTypes = {
+Select.propTypes = {
   labelText: PropTypes.string.isRequired,
   SelectOptions: PropTypes.arrayOf(PropTypes.string).isRequired,
   htmlFor: PropTypes.string.isRequired,
@@ -29,4 +29,4 @@ SelectComponent.propTypes = {
   id: PropTypes.string.isRequired,
 };
 
-export default SelectComponent;
+export default Select;

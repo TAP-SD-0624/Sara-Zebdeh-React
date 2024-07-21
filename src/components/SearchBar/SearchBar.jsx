@@ -1,15 +1,15 @@
 import React from "react";
 import SearchInputComponent from "../search/SearchInputComponent";
-import SelectComponent from "../select/SelectComponent";
-import "./search-selectors.css";
+import Select from "../Select/Select";
+import "./searchBar.css";
 
-function SearchAndSelecorsComponent() {
+function SearchBar() {
   return (
     <div className="flex search-sort-filter-box">
       <SearchInputComponent />
 
       <div className="flex selectors-box">
-        <SelectComponent
+        <Select
           htmlFor="sort"
           id="sort"
           name="sort"
@@ -17,7 +17,7 @@ function SearchAndSelecorsComponent() {
           SelectOptions={["Default", "Topic Title", "Author Name"]}
         />
 
-        <SelectComponent
+        <Select
           htmlFor="filter"
           id="filter"
           name="filter"
@@ -36,4 +36,4 @@ function SearchAndSelecorsComponent() {
   );
 }
 
-export default SearchAndSelecorsComponent;
+export default SearchBar;

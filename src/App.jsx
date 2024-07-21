@@ -4,8 +4,8 @@ import DetailsLayoutComponent from "./components/DetailsPageLayout/DetailsLayout
 const App = () => {
   return (
     <>
-      {/* <HomeLayoutComponent /> */}
-      <DetailsLayoutComponent />
+      <HomeLayoutComponent />
+      {/* <DetailsLayoutComponent /> */}
     </>
   );
 }

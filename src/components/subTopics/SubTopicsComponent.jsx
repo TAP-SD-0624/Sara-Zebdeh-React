@@ -2,6 +2,18 @@ import React from "react";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import "./subTopics.css";
 
+const SubTopicItem = () => {
+  return (
+    <div className="sub-topic">
+    <button className="flex gap btn">
+      <AiOutlineCheckCircle className="check-icon" />
+
+      <span>JavaScript data types and variables</span>
+    </button>
+  </div>
+  )
+}
+
 const SubTopicsComponent = () => {
   return (
     <div className="sub-topics-div">

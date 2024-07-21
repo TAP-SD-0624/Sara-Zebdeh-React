@@ -1,13 +1,13 @@
 import React from "react";
-import CardComponrnt from "../card/CardComponrnt";
+import Topic from "../Topic/Topic";
 import PropTypes from "prop-types";
-import "./cards.css";
+import "./topics.css";
 
-const CardsComponent = (props) => (
+const Topics = (props) => (
   <div className="topics-container">
     {props.topics.map((topic) => (
       // eslint-disable-next-line react/jsx-key
-      <CardComponrnt
+      <Topic
         name={topic.name}
         topic={topic.topic}
         category={topic.category}
@@ -18,7 +18,7 @@ const CardsComponent = (props) => (
   </div>
 );
 
-CardsComponent.propTypes = {
+Topics.propTypes = {
   topics: PropTypes.arrayOf(
     PropTypes.shape({
       image: PropTypes.string.isRequired,
@@ -30,4 +30,4 @@ CardsComponent.propTypes = {
   ),
 };
 
-export default CardsComponent;
+export default Topics;

@@ -2,7 +2,7 @@
 import React from "react";
 import "./welcome.css";
 
-const WelcomeComponent = () => {
+const WelcomeBox = () => {
   return (
     <div className="welcome-box">
       <div>
@@ -13,4 +13,4 @@ const WelcomeComponent = () => {
   );
 };
 
-export default WelcomeComponent;
+export default WelcomeBox;

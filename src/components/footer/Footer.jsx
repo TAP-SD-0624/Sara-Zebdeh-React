@@ -2,7 +2,7 @@ import React from "react";
 import { AiFillHeart } from "react-icons/ai";
 import "./footer.css";
 
-const FooterComponent = () => {
+const Footer = () => {
   return (
     <div className="footer-section">
       <footer>
@@ -16,4 +16,4 @@ const FooterComponent = () => {
   );
 };
 
-export default FooterComponent;
+export default Footer;

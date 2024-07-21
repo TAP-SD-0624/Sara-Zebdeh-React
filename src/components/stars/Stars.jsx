@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import "./stars.css";
 
-const StarsRatingComponent = (props) => {
+const Stars = (props) => {
   // Calculate how many full stars and empty stars are needed
   const fullStars = Math.floor(props.rating);
   const hasHalfStar = props.rating % 1 !== 0;
@@ -33,8 +33,8 @@ const StarsRatingComponent = (props) => {
   return <div className="star-rating">{renderStars()}</div>;
 };
 
-StarsRatingComponent.propTypes = {
+Stars.propTypes = {
   rating: PropTypes.number.isRequired,
 };
 
-export default StarsRatingComponent;
+export default Stars;

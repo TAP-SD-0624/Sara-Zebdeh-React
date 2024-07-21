@@ -1,7 +1,7 @@
 import React from "react";
 import "./triangles.css";
 
-const TriangleComponent = () => {
+const Triangles = () => {
   return (
     <div className="two-triangles-box">
       <div className="triangle2"></div>
@@ -10,4 +10,4 @@ const TriangleComponent = () => {
   );
 };
 
-export default TriangleComponent;
+export default Triangles;
