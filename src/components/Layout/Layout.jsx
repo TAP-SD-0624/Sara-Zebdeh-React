@@ -1,21 +1,25 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Header from "../header/Header";
-import HomeContentComponent from "../HomeContent/HomeContent";
 import Footer from "../Footer/Footer";
-import "./HomeLayout.css";
+import "./layout.css";
 
-function HomeLayoutComponent() {
+const Layout = (props) => {
   return (
     <>
       <body className="container">
         <div className="header-body-section">
           <Header />
-          <HomeContentComponent />
+          {props.content}
         </div>
         <Footer />
       </body>
     </>
   );
-}
+};
 
-export default HomeLayoutComponent;
+Layout.propTypes = {
+    content: PropTypes.node.isRequired,
+};
+
+export default Layout;

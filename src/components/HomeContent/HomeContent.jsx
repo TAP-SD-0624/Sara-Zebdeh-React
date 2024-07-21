@@ -4,7 +4,7 @@ import Topics from "../Topics/Topics";
 import { fetchTopicsData } from "../../api/topicsData";
 import "./homeContent.css";
 
-const HomeContentComponent = () => {
+const HomeContent = () => {
   const [topics, setTopics] = useState([]);
 
   useEffect(() => {
@@ -23,4 +23,4 @@ const HomeContentComponent = () => {
   );
 };
 
-export default HomeContentComponent;
+export default HomeContent;

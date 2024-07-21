@@ -1,11 +1,12 @@
-import HomeLayoutComponent from "./components/HomeLayout/HomeLayoutComponent";
-import DetailsLayoutComponent from "./components/DetailsPageLayout/DetailsLayoutComponent";
+import Home from "./pages/Home";
+import Details from "./pages/Details";
+import "./main.css";
 
 const App = () => {
   return (
     <>
-      <HomeLayoutComponent />
-      {/* <DetailsLayoutComponent /> */}
+      <Home />
+      {/* <Details /> */}
     </>
   );
 }

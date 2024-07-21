@@ -5,7 +5,7 @@ import TopicDetailsCard from "../detailsCard/TopicDetailsCard";
 import SubTopicsComponent from "../subTopics/SubTopicsComponent";
 import "./detailsContent.css";
 
-const DetailsContentComponent = () => {
+const DetailsContent = () => {
   const [topics, setTopics] = useState([]);
 
   useEffect(() => {
@@ -32,4 +32,4 @@ const DetailsContentComponent = () => {
   );
 };
 
-export default DetailsContentComponent;
+export default DetailsContent;
