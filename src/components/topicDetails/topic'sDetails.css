@@ -1,24 +1,7 @@
-:root {
-    /* Default (light mode) colors */
-    --brand-primary: #0768ac;
-    --brand-secondary: #03c180;
-    --bg_default: #ffffff;
-    --bg_body: #f0f9ff;
-    --lines-color: #dddddd;
-    --body-text: #333333;
-    --heart-color: #dc143c;
-    --white-color:white;
-    --bg_details:#333333;
-    --black-color:black;
-    --star-color:#ff9f43;
-    --favourite-border:#dddddd;
-  }
-
 .details-div,
 .sub-topics-div {
   max-width: 535px;
 }
-
 
 .details-div {
   background-color: var(--bg_details);
@@ -28,9 +11,9 @@
   gap: 1rem;
 }
 
-.details-div h4{
-    color: var(--brand-secondary);
-    background-color: var(--bg_details);
+.details-div h4 {
+  color: var(--brand-secondary);
+  background-color: var(--bg_details);
 }
 
 .details-h3,
@@ -46,26 +29,26 @@
 }
 
 .details-ul {
-    background-color: var(--bg_details);
-  }
-  
-  .details-ul li {
-    background-color: var(--bg_details);
-  }
-  
-  .details-ul li ion-icon {
-    background-color: var(--bg_details);
-  }
+  background-color: var(--bg_details);
+}
 
-  .star {
-    color: var(--star-color);
-    background-color: var(--bg_details);
-  }
+.details-ul li {
+  background-color: var(--bg_details);
+}
 
-  .details-div ul {
-    list-style: none;
-    display: flex;
-    padding-top: 0;
-    justify-content: flex-start;
-    align-items: center;
-  }
+.details-ul li ion-icon {
+  background-color: var(--bg_details);
+}
+
+.star {
+  color: var(--star-color);
+  background-color: var(--bg_details);
+}
+
+.details-div ul {
+  list-style: none;
+  display: flex;
+  padding-top: 0;
+  justify-content: flex-start;
+  align-items: center;
+}

@@ -1,32 +1,16 @@
-:root {
-    /* Default (light mode) colors */
-    --brand-primary: #0768ac;
-    --brand-secondary: #03c180;
-    --bg_default: #ffffff;
-    --bg_body: #f0f9ff;
-    --lines-color: #dddddd;
-    --body-text: #333333;
-    --heart-color: #dc143c;
-    --white-color:white;
-    --bg_details:#333333;
-    --black-color:black;
-    --star-color:#ff9f43;
-    --favourite-border:#dddddd;
-  }
+.welcome-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transform: translateY(-1rem);
+  background-color: transparent;
+}
 
-  .welcome-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    transform: translateY(-1rem);
-    background-color: transparent;
-  }
-  
-  .welcome-box * {
-    background-color: transparent;
-  }
-  
-  .welcome-box h2 {
-    text-align: left;
-  }
+.welcome-box * {
+  background-color: transparent;
+}
+
+.welcome-box h2 {
+  text-align: left;
+}
