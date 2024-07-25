@@ -8,6 +8,7 @@ const Topics = (props) => (
     {props.topics.map((topic) => (
       // eslint-disable-next-line react/jsx-key
       <Topic
+        id={topic.id}
         name={topic.name}
         topic={topic.topic}
         category={topic.category}
@@ -21,6 +22,7 @@ const Topics = (props) => (
 Topics.propTypes = {
   topics: PropTypes.arrayOf(
     PropTypes.shape({
+      id: PropTypes.string.isRequired,
       image: PropTypes.string.isRequired,
       topic: PropTypes.string.isRequired,
       category: PropTypes.string.isRequired,

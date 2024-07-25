@@ -13,28 +13,35 @@ const Stars = (props) => {
 
     // Full stars
     for (let i = 0; i < fullStars; i++) {
-      stars.push(<AiFillStar key={i} />);
+      stars.push(<AiFillStar className={props.isForDetails ? "star-details" : "star"} key={i} />);
     }
 
     // Half star if applicable
     if (hasHalfStar) {
-      stars.push(<AiFillStar key="half" style={{ opacity: 0.5 }} />);
+      stars.push(
+        <AiFillStar className={props.isForDetails ? "star-details" : "star"} key="half" style={{ opacity: 0.5 }} />
+      );
     }
 
     // Empty stars
     const remainingStars = 5 - Math.ceil(props.rating); // Remaining empty stars
     for (let i = 0; i < remainingStars; i++) {
-      stars.push(<AiOutlineStar key={`empty-${i}`} />);
+      stars.push(<AiOutlineStar className={props.isForDetails ? "star-details" : "star"} key={`empty-${i}`} />);
     }
 
     return stars;
   };
 
-  return <div className="star-rating">{renderStars()}</div>;
+  return (
+    <div className={props.isForDetails ? "star-rating-details" : "star-rating"}>
+      {renderStars()}
+    </div>
+  );
 };
 
 Stars.propTypes = {
   rating: PropTypes.number.isRequired,
+  isForDetails: PropTypes.bool,
 };
 
 export default Stars;
