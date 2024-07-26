@@ -1,0 +1,23 @@
+// Define variables for colors and dimensions
+$lines-color: var(--lines-color);
+$bg-default: var(--bg_default);
+$border-radius-small: 8px;
+$border-radius-large: 16px;
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-sort-filter-box {
+  border: 1px solid $lines-color;
+  border-radius: $border-radius-small;
+  background-color: $bg-default;
+
+  .selectors-box,
+  .select:last-child {
+    border-bottom-right-radius: $border-radius-large;
+    border-top-right-radius: $border-radius-small;
+  }
+}

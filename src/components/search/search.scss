@@ -1,0 +1,26 @@
+$gap-value: 8px;
+$font-size-input: 0.85rem;
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .search-box {
+    padding: $gap-value;
+
+    input {
+      font-size: $font-size-input;
+    }
+
+    .search {
+      border: none;
+      background: none;
+      outline: none;
+    }
+  }
+
+  .gap {
+    gap: $gap-value;
+  }
+}

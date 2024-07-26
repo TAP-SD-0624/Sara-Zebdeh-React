@@ -1,7 +1,7 @@
 import React from "react";
 import SearchInputComponent from "../search/SearchInputComponent";
 import Select from "../select/Select";
-import "./searchBar.css";
+import "./searchBar.scss";
 
 function SearchBar() {
   return (

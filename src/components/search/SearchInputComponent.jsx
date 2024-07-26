@@ -1,6 +1,6 @@
 import React from "react";
 import { GoSearch } from "react-icons/go";
-import "./search.css";
+import "./search.scss";
 
 function SearchInputComponent() {
   return (
