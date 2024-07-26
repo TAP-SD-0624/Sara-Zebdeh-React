@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { useParams } from "react-router-dom";
 import { fetchTopicData } from "../../api/topicsData";
 import { AiOutlineCheckCircle } from "react-icons/ai";
-import "./subTopics.css";
+import "./subTopics.scss";
 
 const SubTopicItem = ({ subTopicsArray }) => {
   return (

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { fetchTopicData } from "../../api/topicsData";
 import Stars from "../Stars/Stars";
-import "./DetailsOfTopic.css";
+import "./DetailsOfTopic.scss";
 
 const DetailsOfTopic = () => {
   let { topicId } = useParams();

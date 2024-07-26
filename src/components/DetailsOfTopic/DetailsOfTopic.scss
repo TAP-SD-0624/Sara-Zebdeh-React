@@ -1,0 +1,23 @@
+// Define variables
+$bg-details: var(--bg_details);
+$brand-secondary: var(--brand-secondary);
+$white-color: var(--white-color);
+
+.details-div {
+  max-width: 535px;
+  background-color: $bg-details;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  h4 {
+    color: $brand-secondary;
+    background-color: $bg-details;
+  }
+
+  .details-h3,
+  .details-p {
+    color: $white-color;
+    background-color: $bg-details;
+  }
+}

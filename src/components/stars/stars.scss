@@ -1,0 +1,18 @@
+// Define variables
+$star-color: var(--star-color);
+$bg-details: var(--bg_details);
+
+.star-rating {
+  margin-top: 20px;
+  color: $star-color;
+}
+
+.star-rating-details {
+  margin-top: 0;
+  color: $star-color;
+  background-color: $bg-details;
+
+  .star-details {
+    background-color: $bg-details;
+  }
+}

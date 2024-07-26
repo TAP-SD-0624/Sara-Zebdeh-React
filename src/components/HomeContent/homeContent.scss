@@ -1,0 +1,18 @@
+// Define variables
+$bg-body: var(--bg_body);
+$body-text: var(--body-text);
+$padding: 16px 32px;
+$gap: 16px;
+
+.home-content {
+  background-color: $bg-body;
+  padding: $padding;
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+
+  .nums-topic-found-h2 {
+    color: $body-text;
+    background-color: $bg-body;
+  }
+}

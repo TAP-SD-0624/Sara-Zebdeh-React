@@ -1,0 +1,113 @@
+// Define variables
+$white-color: var(--white-color);
+$black-color: var(--black-color);
+$brand-secondary: var(--brand-secondary);
+$lines-color: var(--lines-color);
+$favourite-border: var(--favourite-border);
+$gray-color: var(--gray-color);
+
+.relative-container {
+  position: relative;
+  min-width: 250px;
+}
+
+.topic-of-card {
+  width: 100%;
+  position: absolute;
+  border: 1px solid $white-color;
+  background-color: $white-color;
+  box-shadow: 
+    0 14px 28px $lines-color rgba(0, 0, 0, 0.08),
+    0 10px 10px $lines-color rgba(0, 0, 0, 0.05);
+}
+
+.topic-card-img {
+  width: 100%;
+  height: 128px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.favourite-information-div {
+  background-color: $white-color;
+  padding: 16px;
+
+  .p-h5-a-div {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 10px;
+    color: $black-color;
+
+    h5, a {
+      background-color: $white-color;
+      color: $black-color;
+    }
+  }
+
+  .gap {
+    gap: 8px;
+  }
+
+  .favourite-div {
+    border: 1px solid $favourite-border;
+    padding: 16px;
+    align-items: center;
+    background-color: $white-color;
+
+    p:first-child {
+      color: $black-color;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+  }
+
+  .add-to-favourite-div {
+    background-color: $brand-secondary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #add-to-favourite-btn {
+      color: $white-color;
+      background-color: $brand-secondary;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 8px;
+
+      .btn {
+        border: none;
+        background: none;
+        cursor: pointer;
+        font-size: 0.83rem;
+      }
+    }
+    
+    .add-span {
+      background-color: $brand-secondary;
+    }
+    
+    .add-to-favourite-bottom {
+      margin-top: 10px;
+      text-align: center;
+      color: $gray-color;
+    }
+  }
+}
+
+.icon-btn {
+  width: 13px;
+  height: 13px;
+  color: $white-color;
+  background: none;
+}

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import SearchBar from "../SearchBar/SearchBar";
 import Topics from "../Topics/Topics";
 import { fetchTopicsData } from "../../api/topicsData";
-import "./homeContent.css";
+import "./homeContent.scss";
 
 const HomeContent = () => {
   const [topics, setTopics] = useState([]);

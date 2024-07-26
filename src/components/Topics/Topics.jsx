@@ -1,7 +1,7 @@
 import React from "react";
 import Topic from "../Topic/Topic";
 import PropTypes from "prop-types";
-import "./topics.css";
+import "./topics.scss";
 
 const Topics = (props) => (
   <div className="topics-container">

@@ -1,0 +1,67 @@
+// Define variables
+$lines-color: var(--lines-color);
+$body-text: var(--body-text);
+$brand-secondary: var(--brand-secondary);
+$bg-default: var(--bg_default);
+
+.sub-topics-div {
+  width: 100%;
+  max-width: 535px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid $lines-color;
+
+  .sub-topic {
+    padding: 15px;
+    width: 100%;
+    border-bottom: 1px solid $lines-color;
+
+    &:first-child {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    &:last-child {
+      border-radius: 8px;
+      border-bottom: none;
+    }
+
+    span {
+      color: $body-text;
+    }
+  }
+
+  .sub-topics-h4 {
+    color: $body-text;
+    background-color: $bg-default;
+  }
+}
+
+.check-icon {
+  width: 15px;
+  height: 15px;
+  color: $brand-secondary;
+}
+
+// Flex utility class
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Gap utility class
+.gap {
+  gap: 0.5rem;
+}
+
+// Button styling
+.btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 0.83rem;
+}

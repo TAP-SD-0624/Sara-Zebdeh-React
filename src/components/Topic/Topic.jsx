@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Stars from "../Stars/Stars";
 import { Link, useNavigate } from "react-router-dom";
-import "./topic.css";
+import "./topic.scss";
 
 const Topic = (props) => {
   const navigate = useNavigate();

@@ -2,7 +2,7 @@ import React from "react";
 import DetailsOfTopic from "../DetailsOfTopic/DetailsOfTopic";
 import DetailsOfTopicCard from "../DetailsOfTopicCard/DetailsOfTopicCard";
 import SubTopics from "../SubTopics/SubTopics";
-import "./detailsContent.css";
+import "./detailsContent.scss";
 
 const DetailsContent = () => {
   return (

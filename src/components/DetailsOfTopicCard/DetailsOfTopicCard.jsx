@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { fetchTopicData } from "../../api/topicsData";
 import { AiOutlineHeart } from "react-icons/ai";
-import "./DetailsOfTopicCard.css";
+import "./DetailsOfTopicCard.scss";
 
 const DetailsOfTopicCard = () => {
   let { topicId } = useParams();

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
-import "./stars.css";
+import "./stars.scss";
 
 const Stars = (props) => {
   // Calculate how many full stars and empty stars are needed
