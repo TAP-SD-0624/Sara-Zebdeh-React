@@ -1,0 +1,22 @@
+$padding-header-section: 16px 48px;
+$gap-value: 0.5rem;
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .header-section {
+    padding: $padding-header-section;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .gab {
+      gap: $gap-value;
+    }
+  }
+}

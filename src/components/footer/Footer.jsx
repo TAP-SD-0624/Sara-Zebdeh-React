@@ -1,6 +1,6 @@
 import React from "react";
 import { AiFillHeart } from "react-icons/ai";
-import "./footer.css";
+import "./footer.scss";
 
 const Footer = () => {
   return (

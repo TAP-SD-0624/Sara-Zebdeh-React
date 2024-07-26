@@ -1,0 +1,24 @@
+$brand-primary: var(--brand-primary);
+$brand-secondary: var(--brand-secondary);
+
+.two-triangles-box {
+  position: relative;
+  max-height: 120px;
+
+  .triangle1,
+  .triangle2 {
+    width: 100%;
+    min-height: 60px;
+  }
+
+  .triangle1 {
+    clip-path: polygon(0 0, 0 100%, 80% 0);
+    background: linear-gradient(90deg, $brand-primary 0%, $brand-secondary 100%);
+  }
+
+  .triangle2 {
+    position: absolute;
+    background-color: $brand-secondary;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+  }
+}

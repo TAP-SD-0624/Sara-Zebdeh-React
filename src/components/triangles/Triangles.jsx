@@ -1,5 +1,5 @@
 import React from "react";
-import "./triangles.css";
+import "./triangles.scss";
 
 const Triangles = () => {
   return (

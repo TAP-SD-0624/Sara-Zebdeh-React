@@ -1,0 +1,29 @@
+$lines-color: var(--lines-color);
+$body-text: var(--body-text);
+
+.btn {
+  border: 1px solid $lines-color;
+  border-radius: 4.8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4.8px;
+  color: $body-text;
+
+  .gap {
+    gap: 8px;
+  }
+
+  #icon-btn {
+    width: 13px;
+    height: 13px;
+    color: $body-text;
+  }
+
+  .btn-text {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 0.83rem;
+  }
+}
