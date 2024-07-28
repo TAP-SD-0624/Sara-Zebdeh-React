@@ -10,7 +10,7 @@ const Layout = (props) => {
       <body className="container">
         <div className="header-body-section">
           <Header />
-          {props.content}
+          {props.children}
         </div>
         <Footer />
       </body>
@@ -19,7 +19,7 @@ const Layout = (props) => {
 };
 
 Layout.propTypes = {
-    content: PropTypes.node.isRequired,
+  children: PropTypes.node,
 };
 
 export default Layout;

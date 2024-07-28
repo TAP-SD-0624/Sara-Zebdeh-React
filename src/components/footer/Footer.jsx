@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="footer-section">
       <footer>
-        <div className="footer-div gab">
+        <div className="footer-div gap">
           <p>Developed with</p>
           <AiFillHeart className="heart-icon" name="heart"></AiFillHeart>
           <p>&copy; 2023</p>

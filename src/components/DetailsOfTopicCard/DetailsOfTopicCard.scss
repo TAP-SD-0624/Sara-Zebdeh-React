@@ -1,11 +1,3 @@
-// Define variables
-$white-color: var(--white-color);
-$black-color: var(--black-color);
-$brand-secondary: var(--brand-secondary);
-$lines-color: var(--lines-color);
-$favourite-border: var(--favourite-border);
-$gray-color: var(--gray-color);
-
 .relative-container {
   position: relative;
   min-width: 250px;
@@ -14,11 +6,10 @@ $gray-color: var(--gray-color);
 .topic-of-card {
   width: 100%;
   position: absolute;
-  border: 1px solid $white-color;
-  background-color: $white-color;
-  box-shadow: 
-    0 14px 28px $lines-color rgba(0, 0, 0, 0.08),
-    0 10px 10px $lines-color rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--white-color);
+  background-color: var(--white-color);
+  box-shadow: 0 14px 28px var(--lines-color) (0, 0, 0, 0.08),
+    0 10px 10px var(--lines-color) (0, 0, 0, 0.05);
 }
 
 .topic-card-img {
@@ -28,86 +19,96 @@ $gray-color: var(--gray-color);
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
-  img {
-    width: 100%;
-    height: 100%;
-  }
+.topic-card-img img {
+  width: 100%;
+  height: 100%;
 }
 
 .favourite-information-div {
-  background-color: $white-color;
+  background-color: var(--white-color);
   padding: 16px;
+}
 
-  .p-h5-a-div {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    margin-bottom: 10px;
-    color: $black-color;
+.p-h5-a-div {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 10px;
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
 
-    h5, a {
-      background-color: $white-color;
-      color: $black-color;
-    }
-  }
+.p-h5-a-div h5 {
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
 
-  .gap {
-    gap: 8px;
-  }
+.p-h5-a-div a {
+  background-color: var(--white-color);
+}
 
-  .favourite-div {
-    border: 1px solid $favourite-border;
-    padding: 16px;
-    align-items: center;
-    background-color: $white-color;
+.gap {
+  gap: 8px;
+}
 
-    p:first-child {
-      color: $black-color;
-    }
+.favourite-div {
+  border: 1px solid var(--favourite-border);
+  padding: 16px;
+  align-items: center;
+  background-color: var(--white-color);
+}
 
-    p {
-      margin-bottom: 10px;
-    }
-  }
+.favourite-div {
+  background-color: var(--white-color);
+}
 
-  .add-to-favourite-div {
-    background-color: $brand-secondary;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.favourite-div p:first-child {
+  color: var(--black-color);
+}
 
-    #add-to-favourite-btn {
-      color: $white-color;
-      background-color: $brand-secondary;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 8px;
+.favourite-div p {
+  margin-bottom: 10px;
+}
 
-      .btn {
-        border: none;
-        background: none;
-        cursor: pointer;
-        font-size: 0.83rem;
-      }
-    }
-    
-    .add-span {
-      background-color: $brand-secondary;
-    }
-    
-    .add-to-favourite-bottom {
-      margin-top: 10px;
-      text-align: center;
-      color: $gray-color;
-    }
-  }
+.add-to-favourite-div {
+  background-color: var(--brand-secondary);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#add-to-favourite-btn {
+  color: var(--white-color);
+  background-color: var(--brand-secondary);
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 0.83rem;
+}
+
+.add-span {
+  background-color: var(--brand-secondary);
+}
+
+.add-to-favourite-bottom {
+  margin-top: 10px;
+  text-align: center;
+  color: var(--gray-color);
 }
 
 .icon-btn {
   width: 13px;
   height: 13px;
-  color: $white-color;
+}
+.icon-btn {
+  color: var(--white-color);
   background: none;
 }
