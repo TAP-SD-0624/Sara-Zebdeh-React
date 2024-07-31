@@ -17,7 +17,7 @@ const HomeContent = () => {
   return (
     <main className="home-content">
       <SearchBar />
-      <h2 className="nums-topic-found-h2">"24" Web Topics Found</h2>
+      <h2 className="nums-topic-found-h2">"39" Web Topics Found</h2>
       <Topics topics={topics} />
     </main>
   );

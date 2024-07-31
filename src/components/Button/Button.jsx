@@ -5,7 +5,7 @@ import "./button.scss";
 const Button = (props) => {
   return (
     <>
-      <button className="btn gap" id="button">
+      <button className="btn gap" id="button" onClick={props.onClick}>
         <props.icon id="icon-btn" />
         <span className="btn-text">{props.name}</span>
       </button>
@@ -16,6 +16,7 @@ const Button = (props) => {
 Button.propTypes = {
   name: PropTypes.string.isRequired,
   icon: PropTypes.elementType.isRequired,
+  onClick: PropTypes.func,
 };
 
 export default Button;
