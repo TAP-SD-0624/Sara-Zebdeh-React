@@ -3,8 +3,7 @@ import Logo from "../Logo/Logo";
 import Button from "../Button/Button";
 import Triangles from "../Triangles/Triangles";
 import WelcomeBox from "../WelcomeBox/WelcomeBox";
-import { AiOutlineHeart } from "react-icons/ai";
-import { AiOutlineMoon } from "react-icons/ai";
+import { AiOutlineHeart, AiOutlineMoon, AiFillMoon } from "react-icons/ai";
 import "./header.scss";
 
 const Header = () => {
@@ -41,7 +40,7 @@ const Header = () => {
         <div className="flex gab">
           <Button
             name={theme === "light" ? "Dark Mode" : "Light Mode"}
-            icon={AiOutlineMoon}
+            icon={theme === "light" ? AiOutlineMoon : AiFillMoon}
             onClick={changeTheme}
             // onClick={toggleTheme}
           />
