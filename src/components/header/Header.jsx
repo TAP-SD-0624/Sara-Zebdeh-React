@@ -7,7 +7,9 @@ import { AiOutlineHeart, AiOutlineMoon, AiFillMoon } from "react-icons/ai";
 import "./header.scss";
 
 const Header = () => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem("theme") || "light";
+  });
 
   // const toggleTheme = () => {
   //   if (theme === "light") {
@@ -27,6 +29,8 @@ const Header = () => {
       body.classList.toggle("light-mode", theme === "light");
       body.classList.toggle("dark-mode", theme === "dark");
     }
+    
+    localStorage.setItem("theme", theme);
   }, [theme]);
 
   const changeTheme = () => {

@@ -7,7 +7,7 @@ import "./layout.scss";
 const Layout = (props) => {
   return (
     <>
-      <body className="container">
+      <body className="light-mode container">
         <div className="header-body-section">
           <Header />
           {props.children}
