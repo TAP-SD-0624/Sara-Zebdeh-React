@@ -3,38 +3,47 @@ import Logo from "../Logo/Logo";
 import Button from "../Button/Button";
 import Triangles from "../Triangles/Triangles";
 import WelcomeBox from "../WelcomeBox/WelcomeBox";
-import { AiOutlineHeart, AiOutlineMoon, AiFillMoon } from "react-icons/ai";
+import {
+  AiOutlineHeart,
+  AiOutlineMoon,
+  AiFillMoon,
+  AiFillHeart,
+} from "react-icons/ai";
 import "./header.scss";
 
 const Header = () => {
-  const [theme, setTheme] = useState(() => {
-    return localStorage.getItem("theme") || "light";
-  });
-
-  // const toggleTheme = () => {
-  //   if (theme === "light") {
-  //     setTheme("dark");
-  //     body.classList.add("dark-mode");
-  //     body.classList.remove("light-mode");
-  //   } else {
-  //     setTheme("light");
-  //     body.classList.add("light-mode");
-  //     body.classList.remove("dark-mode");
-  //   }
-  // };
+  const [theme, setTheme] = useState("");
+  const [favouriteState, setFavouriteState] = useState(false);
 
   useEffect(() => {
-    const body = document.querySelector(".container");
-    if (body) {
-      body.classList.toggle("light-mode", theme === "light");
-      body.classList.toggle("dark-mode", theme === "dark");
-    }
-    
-    localStorage.setItem("theme", theme);
-  }, [theme]);
+    let theme;
+    let ftopics;
+    theme = localStorage.getItem("theme");
+    ftopics = localStorage.getItem("favourites");
+    document
+      .querySelector(".container")
+      .classList.toggle("light-mode", theme === "light");
+    document
+      .querySelector(".container")
+      .classList.toggle("dark-mode", theme === "dark");
+    setTheme(theme);
+  }, []);
 
   const changeTheme = () => {
-    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+    let theme = localStorage.getItem("theme") === "light" ? "dark" : "light";
+    localStorage.setItem("theme", theme);
+    document
+      .querySelector(".container")
+      .classList.toggle("light-mode", theme === "light");
+    document
+      .querySelector(".container")
+      .classList.toggle("dark-mode", theme === "dark");
+    setTheme(theme);
+  };
+
+  const favourites = () => {
+    document.querySelector(".favourites").classList.toggle("show");
+    setFavouriteState(!favouriteState);
   };
 
   return (
@@ -46,9 +55,12 @@ const Header = () => {
             name={theme === "light" ? "Dark Mode" : "Light Mode"}
             icon={theme === "light" ? AiOutlineMoon : AiFillMoon}
             onClick={changeTheme}
-            // onClick={toggleTheme}
           />
-          <Button name="Favourites" icon={AiOutlineHeart} />
+          <Button
+            name="Favourites"
+            icon={favouriteState ? AiFillHeart : AiOutlineHeart}
+            onClick={favourites}
+          />
         </div>
       </div>
       <Triangles />

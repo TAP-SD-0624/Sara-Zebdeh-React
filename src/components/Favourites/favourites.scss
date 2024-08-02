@@ -1,0 +1,26 @@
+.favourites {
+  min-height: 200px;
+  width: 100%;
+  display: none;
+  position: sticky;
+  bottom: 0;
+}
+.favourites.show {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+}
+
+.favourites-p {
+  color: var(--body-text);
+  font-weight: 700;
+}
+
+.favourites-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  padding-top: 16px;
+  background-color: var(--bg_default);
+  grid-gap: 1.25rem;
+}
